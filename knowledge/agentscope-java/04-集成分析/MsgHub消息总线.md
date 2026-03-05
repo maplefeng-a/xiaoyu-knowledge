@@ -8,50 +8,197 @@ aliases:
   - 多智能体消息总线
 tags:
   - agentscope-java
-refs: []
+refs:
+  - io.agentscope.core.pipeline.MsgHub
 ---
 
 # MsgHub 消息总线
 
-> agentscope-java 集成分析
+> agentscope-java 核心组件 | 多智能体协作基础设施
 
 ## 一句话
 
-基于文件系统的事件总线，通过“目录即房间、文件即事件”实现多智能体可追溯协作。
+内存级消息广播中心，自动管理多智能体之间的消息订阅与分发，无需手动传递消息。
 
 ## 核心定位
 
-- 轻量：基于 Markdown 文件，无需额外中间件
-- 解耦：发布-订阅通信，发送者与接收者分离
-- 可追溯：消息天然持久化，可审计与回放
-- 易扩展：支持 event_type 与元数据扩展
+- **自动化**：消息自动广播，无需手动 `observe()`
+- **响应式**：全链路 `Mono/Flux`，非阻塞
+- **动态管理**：运行时添加/移除参与者
+- **生命周期**：`enter()/exit()` + try-with-resources
 
-## 结构抽象
+## 架构设计
 
-- Room（房间）：`messages/{room}/`
-- Event（事件）：单个 `.md` 消息文件（含 frontmatter）
-- Hub（总线）：管理订阅、广播、查询
-- 工具层：`send_event/query_events` 提供生产与消费入口
+```
+┌─────────────────────────────────────────────────────────┐
+│                       MsgHub                            │
+│  ┌─────────┐  ┌─────────┐  ┌─────────┐                 │
+│  │ Alice   │◄─┤ 广播中心 ├─►│ Bob     │                 │
+│  │ Agent   │  │ (自动)  │  │ Agent   │                 │
+│  └────┬────┘  └────┬────┘  └────┬────┘                 │
+│       │            │            │                       │
+│       │      ┌─────▼─────┐      │                       │
+│       └─────►│ Charlie   │◄─────┘                       │
+│              │ Agent     │                              │
+│              └───────────┘                              │
+└─────────────────────────────────────────────────────────┘
+```
 
-## 协议要点
+## 核心机制
 
-- 必填：`event_type/sender/timestamp/room/title/content`
-- 可选：`tags/reply_to/related_task/status/priority`
-- 常见类型：`work_update/milestone/question/answer/decision/summary`
+### 1. 自动广播
 
-## 在 assistant-agent 中的接入建议
+```java
+// 无需 MsgHub（冗长且容易出错）
+Msg aliceReply = alice.call().block();
+bob.observe(aliceReply).block();
+charlie.observe(aliceReply).block();
 
-- Runtime 协作面：将 MsgHub 作为子智能体协作通道
-- Session 边界：会话内上下文放 session memory，跨会话协作事实落 MsgHub
-- 回溯策略：优先按 room + 时间窗口拉取，再按 event_type 过滤
+// 使用 MsgHub（简洁且自动化）
+try (MsgHub hub = MsgHub.builder()
+        .participants(alice, bob, charlie)
+        .build()) {
+    hub.enter().block();
+    alice.call().block();  // Bob 和 Charlie 自动收到
+}
+```
 
-## 详见
+### 2. 订阅者管理
 
-`documents/agentscope-java/msgshub-research-report.md`
+```java
+// 内部实现：resetSubscribers()
+private void resetSubscribers() {
+    if (enableAutoBroadcast) {
+        for (AgentBase agent : participants) {
+            List<AgentBase> others = participants.stream()
+                .filter(a -> !a.equals(agent))
+                .collect(Collectors.toList());
+            agent.resetSubscribers(name, others);  // 每个Agent订阅其他所有Agent
+        }
+    }
+}
+```
+
+### 3. 生命周期
+
+| 方法 | 作用 |
+|------|------|
+| `enter()` | 设置订阅关系，广播公告消息 |
+| `exit()` | 清理订阅关系 |
+| `close()` | AutoCloseable 实现，自动调用 exit() |
+
+## API 详解
+
+### Builder 方法
+
+| 方法 | 描述 | 默认值 |
+|------|------|--------|
+| `name(String)` | Hub 名称 | UUID |
+| `participants(AgentBase...)` | 参与者（必需） | - |
+| `announcement(Msg...)` | 入口公告消息 | 无 |
+| `enableAutoBroadcast(boolean)` | 自动广播开关 | `true` |
+
+### 实例方法
+
+| 方法 | 返回类型 | 描述 |
+|------|----------|------|
+| `enter()` | `Mono<MsgHub>` | 进入上下文 |
+| `exit()` | `Mono<Void>` | 退出上下文 |
+| `add(AgentBase...)` | `Mono<Void>` | 动态添加参与者 |
+| `delete(AgentBase...)` | `Mono<Void>` | 动态移除参与者 |
+| `broadcast(Msg)` | `Mono<Void>` | 手动广播消息 |
+| `setAutoBroadcast(boolean)` | `void` | 切换自动广播 |
+
+## 使用模式
+
+### 模式1：标准多智能体对话
+
+```java
+try (MsgHub hub = MsgHub.builder()
+        .name("Discussion")
+        .participants(alice, bob, charlie)
+        .announcement(announcement)
+        .build()) {
+
+    hub.enter().block();
+
+    alice.call().block();   // Bob, Charlie 自动收到
+    bob.call().block();     // Alice, Charlie 自动收到
+    charlie.call().block(); // Alice, Bob 自动收到
+}
+```
+
+### 模式2：动态参与者
+
+```java
+try (MsgHub hub = MsgHub.builder()
+        .participants(alice, bob)
+        .build()) {
+
+    hub.enter().block();
+    alice.call().block();
+
+    // 中途加入
+    hub.add(charlie).block();
+
+    alice.call().block();  // 现在 Charlie 也会收到
+}
+```
+
+### 模式3：手动广播控制
+
+```java
+try (MsgHub hub = MsgHub.builder()
+        .participants(alice, bob, charlie)
+        .enableAutoBroadcast(false)  // 关闭自动广播
+        .build()) {
+
+    hub.enter().block();
+
+    Msg reply = alice.call().block();
+    hub.broadcast(reply).block();  // 手动广播
+}
+```
+
+### 模式4：完全响应式
+
+```java
+MsgHub hub = MsgHub.builder()
+        .participants(alice, bob, charlie)
+        .announcement(announcement)
+        .build();
+
+hub.enter()
+    .then(alice.call())
+    .doOnSuccess(msg -> log.info("Alice: {}", msg.getTextContent()))
+    .then(bob.call())
+    .doOnSuccess(msg -> log.info("Bob: {}", msg.getTextContent()))
+    .then(hub.exit())
+    .block();
+```
+
+## 重要提示
+
+### 使用 MultiAgentFormatter
+
+```java
+// 必须使用 MultiAgentFormatter 而非标准格式化器
+DashScopeChatModel model = DashScopeChatModel.builder()
+    .formatter(new DashScopeMultiAgentFormatter())  // 关键！
+    .build();
+```
+
+### 线程安全
+
+- 使用 `CopyOnWriteArrayList` 管理参与者
+- 但单个 Agent 实例不应被并发调用
+
+## 源码位置
+
+`io.agentscope.core.pipeline.MsgHub`
 
 ## 关联
 
-- [[knowledge/agentscope-java/知识地图|知识地图]]
 - [[knowledge/agentscope-java/04-集成分析/多智能体协作|多智能体协作]]
-- [[knowledge/agentscope-java/04-集成分析/MCP协议|MCP协议]]
 - [[knowledge/agentscope-java/03-Agent能力层/Agent抽象|Agent抽象]]
+- [[knowledge/agentscope-java/知识地图|知识地图]]
