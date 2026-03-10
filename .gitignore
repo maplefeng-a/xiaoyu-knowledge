@@ -10,3 +10,16 @@ Thumbs.db
 # Temp
 *.tmp
 *.temp
+
+# Dependencies
+node_modules/
+
+# Build
+dist/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
