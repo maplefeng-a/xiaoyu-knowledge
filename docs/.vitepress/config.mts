@@ -32,6 +32,7 @@ export default defineConfig({
       { text: '框架研究', link: '/frameworks/' },
       { text: 'Java 学习', link: '/java/' },
       { text: 'xiaoyu 项目', link: '/assistant/' },
+      { text: 'Harness 专题', link: '/knowledge/harness/' },
       { text: '知识地图', link: '/knowledge-map' }
     ],
 
@@ -68,6 +69,16 @@ export default defineConfig({
             { text: 'mcp', link: '/assistant/mcp/' },
             { text: 'eval', link: '/assistant/eval/' },
             { text: 'desktop', link: '/assistant/desktop/' }
+          ]
+        }
+      ],
+      '/knowledge/harness/': [
+        {
+          text: 'Harness 专题',
+          items: [
+            { text: '专题首页', link: '/knowledge/harness/' },
+            { text: '原文', link: '/knowledge/harness/原文-The-Anatomy-of-an-Agent-Harness' },
+            { text: '深度解析', link: '/knowledge/harness/深度解析-Agent-Harness架构设计' }
           ]
         }
       ]
