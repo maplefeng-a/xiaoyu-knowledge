@@ -78,6 +78,7 @@ export default defineConfig({
           items: [
             { text: '专题首页', link: '/knowledge/harness/' },
             { text: '原文', link: '/knowledge/harness/原文-The-Anatomy-of-an-Agent-Harness' },
+            { text: '原文展开讲解', link: '/knowledge/harness/原文展开讲解' },
             { text: '深度解析', link: '/knowledge/harness/深度解析-Agent-Harness架构设计' }
           ]
         }
