@@ -1,17 +1,3 @@
----
-id: gaia-benchmark
-type: concept
-title: GAIA 评测基准
-status: active
-tags:
-  - assistant
-  - eval
-  - benchmark
-  - gaia
-refs:
-  - https://huggingface.co/datasets/gaia-benchmark/GAIA
-  - https://arxiv.org/abs/2311.12983
----
 
 # GAIA: General AI Assistants Benchmark
 

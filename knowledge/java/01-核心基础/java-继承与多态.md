@@ -1,16 +1,3 @@
----
-id: java-inheritance-and-polymorphism
-type: concept
-title: 继承与多态
-status: active
-aliases: []
-tags:
-  - java
-  - 面向对象
-  - 继承
-  - 多态
-refs: []
----
 
 # 继承与多态
 

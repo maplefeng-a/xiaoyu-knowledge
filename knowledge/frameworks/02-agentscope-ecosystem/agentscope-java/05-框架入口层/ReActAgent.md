@@ -1,14 +1,3 @@
----
-id: 61c51171-0b05-463a-bb1f-1960be62221c
-type: concept
-title: ReActAgent
-status: active
-aliases: []
-tags:
-  - agentscope-java
-refs:
-  - io.agentscope.core.ReActAgent
----
 
 # ReActAgent
 

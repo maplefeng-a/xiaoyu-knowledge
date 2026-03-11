@@ -1,15 +1,3 @@
----
-id: java-variables-and-types
-type: concept
-title: 变量与数据类型
-status: active
-aliases: []
-tags:
-  - java
-  - 数据类型
-  - 变量
-refs: []
----
 
 # 变量与数据类型
 

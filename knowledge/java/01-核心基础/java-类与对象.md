@@ -1,15 +1,3 @@
----
-id: java-classes-and-objects
-type: concept
-title: 类与对象
-status: active
-aliases: []
-tags:
-  - java
-  - 面向对象
-  - 类
-refs: []
----
 
 # 类与对象
 

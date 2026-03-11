@@ -1,19 +1,3 @@
----
-id: agentscope-java-chat-service
-type: concept
-title: ChatService 聊天服务
-status: active
-aliases:
-  - ChatService
-  - assistant-agent ChatService
-tags:
-  - agentscope-java
-  - service
-  - chat
-  - streaming
-refs:
-  - assistant-agent/src/main/java/com/assistant/agent/service/ChatService.java
----
 
 # ChatService 聊天服务
 

@@ -1,18 +1,3 @@
----
-id: agentscope-java-session-service
-type: concept
-title: SessionService 会话服务
-status: active
-aliases:
-  - SessionService
-tags:
-  - agentscope-java
-  - service
-  - session
-  - spring
-refs:
-  - assistant-agent/src/main/java/com/assistant/agent/service/SessionService.java
----
 
 # SessionService 会话服务
 

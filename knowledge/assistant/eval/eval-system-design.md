@@ -1,14 +1,3 @@
----
-id: eval-system-design
-type: design
-title: Assistant Eval 评估系统设计
-status: active
-tags:
-  - assistant
-  - eval
-  - design
-created_at: "2026-02-27"
----
 
 # Assistant Eval 评估系统设计
 

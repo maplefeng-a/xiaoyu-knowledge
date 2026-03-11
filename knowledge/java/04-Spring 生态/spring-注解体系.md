@@ -1,15 +1,3 @@
----
-id: java-spring-annotation-system
-type: concept
-title: Spring 注解体系
-status: active
-aliases: []
-tags:
-  - spring
-  - java
-  - 注解
-refs: []
----
 
 # Spring 注解体系
 

@@ -1,9 +1,3 @@
----
-title: HiClaw 异构智能体协作验证
-created: 2026-03-11
-tags: [hiclaw, multi-agent, collaboration, architecture]
-status: verified
----
 
 # HiClaw 异构智能体协作验证
 

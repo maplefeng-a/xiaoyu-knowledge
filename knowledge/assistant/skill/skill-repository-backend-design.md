@@ -1,18 +1,3 @@
----
-title: Skill 仓库后端设计
-tags:
-  - skill
-  - mcp
-  - assistant-mcp
-  - design
-status: draft
-created_at: 2026-02-25
-updated_at: 2026-02-25
-authors:
-  - mcp-dev
-related:
-  - skill-package-version-ui-discussion.md
----
 
 # Skill 仓库后端设计（assistant-mcp）
 

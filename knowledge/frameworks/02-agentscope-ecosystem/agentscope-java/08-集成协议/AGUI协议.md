@@ -1,19 +1,3 @@
----
-id: agentscope-protocol-agui
-type: concept
-title: AGUI 协议
-status: active
-aliases:
-  - Agent-UI Protocol
-  - AG-UI
-tags:
-  - agentscope-java
-  - protocol
-  - agui
-  - frontend
-refs:
-  - io.agentscope.core.agui.*
----
 
 # AGUI 协议
 

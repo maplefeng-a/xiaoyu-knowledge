@@ -1,15 +1,3 @@
----
-id: java-stream-api
-type: concept
-title: Java Stream API
-status: active
-aliases: []
-tags:
-  - java
-  - stream
-  - 集合处理
-refs: []
----
 
 # Java Stream API
 

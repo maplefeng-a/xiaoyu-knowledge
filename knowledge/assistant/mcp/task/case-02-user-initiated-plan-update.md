@@ -1,16 +1,3 @@
----
-id: case-02-user-initiated-plan-update
-type: spec
-title: Case 2 用户主动计划更新
-status: active
-tags:
-  - assistant
-  - task
-  - case
-mcp_tools:
-  - task-context
-  - task-write
----
 
 # Case 2：用户主动计划更新（User-Initiated Plan Update）
 

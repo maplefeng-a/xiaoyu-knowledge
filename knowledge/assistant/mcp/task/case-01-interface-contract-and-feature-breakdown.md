@@ -1,13 +1,3 @@
----
-id: case-01-interface-contract
-type: spec
-title: Case 1 接口冻结与开发需求
-status: active
-tags:
-  - assistant
-  - task
-  - mcp
----
 
 # Case 1 接口冻结与开发需求（Daily Kickoff）
 

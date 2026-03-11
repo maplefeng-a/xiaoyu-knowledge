@@ -1,20 +1,3 @@
----
-id: agentscope-extensions-a2a
-type: concept
-title: A2A 扩展
-status: active
-aliases:
-  - Agent-to-Agent
-  - 多智能体协作
-tags:
-  - agentscope-java
-  - extensions
-  - a2a
-  - multi-agent
-refs:
-  - io.agentscope.core.a2a.agent.A2aAgent
-  - io.agentscope.core.a2a.server.card.ConfigurableAgentCard
----
 
 # A2A 扩展
 

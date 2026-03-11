@@ -1,16 +1,3 @@
----
-id: case-03-daily-close
-type: spec
-title: Case 3 收工主动复盘
-status: active
-tags:
-  - assistant
-  - task
-  - case
-mcp_tools:
-  - task-context
-  - task-write
----
 
 # Case 3：收工主动复盘（Daily Close, 23:00）
 

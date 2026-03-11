@@ -1,15 +1,3 @@
----
-id: java-compilation-and-jvm
-type: concept
-title: Java 编译原理与 JVM
-status: active
-aliases: []
-tags:
-  - java
-  - jvm
-  - 编译原理
-refs: []
----
 
 # Java 编译原理与 JVM
 

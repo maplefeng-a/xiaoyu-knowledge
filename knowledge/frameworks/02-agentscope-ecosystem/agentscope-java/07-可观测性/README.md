@@ -1,13 +1,3 @@
----
-id: agentscope-observability
-type: overview
-title: AgentScope 可观测性
-status: active
-tags:
-  - agentscope-java
-  - observability
-  - tracing
----
 
 # AgentScope 可观测性
 

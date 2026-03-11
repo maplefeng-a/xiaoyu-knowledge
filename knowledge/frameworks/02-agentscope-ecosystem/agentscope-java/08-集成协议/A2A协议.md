@@ -1,18 +1,3 @@
----
-id: agentscope-protocol-a2a
-type: concept
-title: A2A 协议
-status: active
-aliases:
-  - Agent-to-Agent Protocol
-tags:
-  - agentscope-java
-  - protocol
-  - a2a
-  - multi-agent
-refs:
-  - io.agentscope.core.a2a.*
----
 
 # A2A 协议
 

@@ -1,21 +1,3 @@
----
-id: agentscope-agent-abstraction
-type: concept
-title: Agent 抽象
-status: active
-aliases:
-  - AgentBase
-  - CallableAgent
-  - StreamableAgent
-tags:
-  - agentscope-java
-  - agent
-  - core
-refs:
-  - agentscope-core/agent/Agent.java
-  - agentscope-core/agent/AgentBase.java
-  - agentscope-core/agent/CallableAgent.java
----
 
 # Agent 抽象
 

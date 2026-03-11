@@ -1,20 +1,3 @@
----
-id: agentscope-extensions-agui
-type: concept
-title: AGUI 扩展
-status: active
-aliases:
-  - Agent-UI Protocol
-  - AG-UI
-tags:
-  - agentscope-java
-  - extensions
-  - agui
-  - frontend
-refs:
-  - io.agentscope.core.agui.adapter.AguiAgentAdapter
-  - io.agentscope.core.agui.registry.AguiAgentRegistry
----
 
 # AGUI 扩展
 

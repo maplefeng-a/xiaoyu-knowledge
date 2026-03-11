@@ -1,15 +1,3 @@
----
-id: java-generics
-type: concept
-title: Java 泛型
-status: active
-aliases: []
-tags:
-  - java
-  - 泛型
-  - generics
-refs: []
----
 
 # Java 泛型（Generics）
 

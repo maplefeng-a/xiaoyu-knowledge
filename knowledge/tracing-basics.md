@@ -1,17 +1,3 @@
----
-id: tracing-basics
-type: concept
-title: Tracing 可观测性基础
-status: active
-aliases:
-  - 链路追踪
-  - OpenTelemetry
-tags:
-  - agentscope-java
-  - 可观测性
-  - tracing
-refs: []
----
 
 # Tracing 可观测性基础
 

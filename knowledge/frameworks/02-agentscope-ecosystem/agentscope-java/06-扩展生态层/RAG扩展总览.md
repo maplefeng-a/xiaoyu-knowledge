@@ -1,18 +1,3 @@
----
-id: agentscope-extensions-rag
-type: overview
-title: RAG 扩展总览
-status: active
-aliases:
-  - Retrieval-Augmented Generation
-  - 检索增强生成
-tags:
-  - agentscope-java
-  - extensions
-  - rag
-refs:
-  - io.agentscope.core.rag.Knowledge
----
 
 # RAG 扩展总览
 

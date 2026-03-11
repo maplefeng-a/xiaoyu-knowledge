@@ -1,13 +1,3 @@
----
-id: 7cdcbcda-b609-47ac-b9ba-32c11ee91e3b
-type: concept
-title: MCP协议
-status: active
-aliases: []
-tags:
-  - agentscope-java
-refs: []
----
 
 # MCP 协议支持
 

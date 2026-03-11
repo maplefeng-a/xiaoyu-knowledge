@@ -1,15 +1,3 @@
----
-id: java-lambda-expression
-type: concept
-title: Java Lambda 表达式
-status: active
-aliases: []
-tags:
-  - java
-  - lambda
-  - 函数式编程
-refs: []
----
 
 # Java Lambda 表达式
 

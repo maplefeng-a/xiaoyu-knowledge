@@ -1,16 +1,3 @@
----
-id: case-01-daily-kickoff
-type: spec
-title: Case 1 晨间主动开工
-status: active
-tags:
-  - assistant
-  - task
-  - case
-mcp_tools:
-  - task-context
-  - task-write
----
 
 # Case 1：晨间主动开工（Daily Kickoff）
 

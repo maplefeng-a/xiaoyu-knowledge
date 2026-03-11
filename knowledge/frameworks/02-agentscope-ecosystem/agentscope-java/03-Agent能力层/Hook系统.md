@@ -1,19 +1,3 @@
----
-id: agentscope-hook-system
-type: concept
-title: Hook 钩子系统
-status: active
-aliases:
-  - HookEvent
-  - ObservableAgent
-tags:
-  - agentscope-java
-  - hook
-  - observability
-refs:
-  - agentscope-core/hook/Hook.java
-  - agentscope-core/hook/HookEventType.java
----
 
 # Hook 钩子系统
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>xiaoyu RSS 订阅源</title>
+    <dateCreated>Wed, 11 Mar 2026 02:59:00 +0800</dateCreated>
+    <ownerName>maple</ownerName>
+  </head>
+  <body>
+    <outline text="AI" title="AI">
+      <outline type="rss" text="OpenAI Blog" title="OpenAI Blog" xmlUrl="https://openai.com/news/rss.xml" htmlUrl="https://openai.com/blog"/>
+      <outline type="rss" text="LangChain Blog" title="LangChain Blog" xmlUrl="https://blog.langchain.com/rss/" htmlUrl="https://blog.langchain.com/"/>
+      <outline type="rss" text="Andrej Karpathy Blog" title="Andrej Karpathy Blog" xmlUrl="https://karpathy.github.io/feed.xml" htmlUrl="https://karpathy.github.io/"/>
+    </outline>
+  </body>
+</opml>

@@ -1,13 +1,3 @@
----
-id: agentscope-extensions-ecosystem
-type: overview
-title: AgentScope 扩展生态
-status: active
-tags:
-  - agentscope-java
-  - extensions
-  - ecosystem
----
 
 # AgentScope 扩展生态
 

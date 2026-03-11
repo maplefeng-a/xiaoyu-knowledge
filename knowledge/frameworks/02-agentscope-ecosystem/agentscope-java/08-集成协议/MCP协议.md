@@ -1,18 +1,3 @@
----
-id: agentscope-protocol-mcp
-type: concept
-title: MCP 协议
-status: active
-aliases:
-  - Model Context Protocol
-tags:
-  - agentscope-java
-  - protocol
-  - mcp
-  - tool
-refs:
-  - io.agentscope.core.mcp.*
----
 
 # MCP 协议
 

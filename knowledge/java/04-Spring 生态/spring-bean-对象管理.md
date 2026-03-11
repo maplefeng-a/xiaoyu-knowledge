@@ -1,16 +1,3 @@
----
-id: java-spring-bean-management
-type: concept
-title: Spring Bean 对象管理
-status: active
-aliases: []
-tags:
-  - spring
-  - java
-  - bean
-  - ioc
-refs: []
----
 
 # Spring Bean 对象管理
 

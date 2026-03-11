@@ -1,18 +1,3 @@
----
-id: langchain-eval-comparison
-type: analysis
-title: LangChain-Eval 与 assistant-eval 模块对比
-status: active
-tags:
-  - assistant
-  - eval
-  - langchain
-  - comparison
-refs:
-  - https://blog.csdn.net/gitblog_00243/article/details/152339149
-  - https://www.digitalocean.com/community/tutorials/langsmith-debudding-evaluating-llm-agents
-  - https://blog.csdn.net/deephub/article/details/149863739
----
 
 # LangChain-Eval 与 assistant-eval 模块对比
 

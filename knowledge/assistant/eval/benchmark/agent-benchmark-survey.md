@@ -1,18 +1,3 @@
----
-id: agent-benchmark-survey
-type: survey
-title: 智能体评测集全景调研报告
-status: active
-tags:
-  - assistant
-  - eval
-  - benchmark
-  - survey
-refs:
-  - https://m.blog.csdn.net/JavaChaoCo/article/details/156134581
-  - https://m.blog.csdn.net/gitblog_00515/article/details/158280742
-  - https://arxiv.org/html/2511.14136v1
----
 
 # 智能体评测集全景调研报告（2024-2025）
 

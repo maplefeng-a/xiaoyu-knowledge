@@ -1,16 +1,3 @@
----
-id: 4b5f7503-d0e7-4db0-9f0a-f1f2f250c1d3
-type: concept
-title: MsgHub消息总线
-status: active
-aliases:
-  - MsgHub
-  - 多智能体消息总线
-tags:
-  - agentscope-java
-refs:
-  - io.agentscope.core.pipeline.MsgHub
----
 
 # MsgHub 消息总线
 

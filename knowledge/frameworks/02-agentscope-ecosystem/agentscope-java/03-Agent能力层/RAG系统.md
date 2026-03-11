@@ -1,19 +1,3 @@
----
-id: d4e5f6a7-b8c9-0123-def0-456789012345
-type: concept
-title: RAG系统
-status: active
-aliases:
-  - RAG
-  - Knowledge
-  - Retrieval-Augmented Generation
-tags:
-  - agentscope-java
-refs:
-  - io.agentscope.core.rag.Knowledge
-  - io.agentscope.core.rag.RAGMode
-  - io.agentscope.core.rag.GenericRAGHook
----
 
 # RAG系统
 

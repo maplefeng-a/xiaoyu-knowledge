@@ -1,19 +1,3 @@
----
-id: hitl-human-in-the-loop
-type: concept
-title: HITL 人机协作
-status: active
-aliases:
-  - Human-in-the-Loop
-  - 人机协作
-  - 人工确认
-tags:
-  - agentscope-java
-  - hook
-  - 安全
-refs:
-  - agentscope-java/agentscope-examples/hitl-chat
----
 
 # HITL 人机协作
 

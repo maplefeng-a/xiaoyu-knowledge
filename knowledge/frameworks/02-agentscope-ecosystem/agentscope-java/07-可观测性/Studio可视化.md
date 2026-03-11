@@ -1,16 +1,3 @@
----
-id: agentscope-observability-studio
-type: concept
-title: Studio 可视化
-status: active
-tags:
-  - agentscope-java
-  - observability
-  - studio
-  - visualization
-refs:
-  - io.agentscope.core.studio.*
----
 
 # Studio 可视化
 

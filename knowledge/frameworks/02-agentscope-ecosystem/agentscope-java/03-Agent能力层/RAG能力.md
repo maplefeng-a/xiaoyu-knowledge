@@ -1,19 +1,3 @@
----
-id: agentscope-rag-capability
-type: concept
-title: RAG 能力
-status: active
-aliases:
-  - RAG
-  - Retrieval-Augmented Generation
-tags:
-  - agentscope-java
-  - rag
-  - knowledge-retrieval
-refs:
-  - agentscope-core/rag/
-  - agentscope-extensions/agentscope-extensions-rag-*
----
 
 # RAG 能力
 

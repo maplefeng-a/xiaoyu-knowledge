@@ -1,14 +1,3 @@
----
-id: knowledge-http-api
-type: spec
-title: Knowledge HTTP 接口文档
-status: active
-tags:
-  - assistant
-  - mcp
-  - knowledge
-  - api
----
 
 # Knowledge HTTP 接口文档
 

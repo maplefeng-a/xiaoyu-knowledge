@@ -1,16 +1,3 @@
----
-id: agentscope-observability-tracing
-type: concept
-title: Tracing 可观测性
-status: active
-tags:
-  - agentscope-java
-  - observability
-  - tracing
-  - opentelemetry
-refs:
-  - io.agentscope.core.tracing.*
----
 
 # Tracing 可观测性
 

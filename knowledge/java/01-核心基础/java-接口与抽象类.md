@@ -1,16 +1,3 @@
----
-id: java-interface-and-abstract
-type: concept
-title: 接口与抽象类
-status: active
-aliases: []
-tags:
-  - java
-  - 面向对象
-  - 接口
-  - 抽象类
-refs: []
----
 
 # 接口与抽象类
 

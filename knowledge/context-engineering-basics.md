@@ -1,17 +1,3 @@
----
-id: context-engineering-basics
-type: concept
-title: 上下文工程基础
-status: active
-aliases:
-  - Context Engineering
-  - 上下文优化
-tags:
-  - agentscope-java
-  - 可观测性
-  - 上下文
-refs: []
----
 
 # 上下文工程基础
 

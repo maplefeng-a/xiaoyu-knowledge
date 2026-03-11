@@ -1,27 +1,3 @@
----
-id: e2ed9f1d-d5d6-4f46-905d-5f2d0f1a8a77
-type: concept
-title: Tracing 与 OpenTelemetry
-status: active
-aliases: []
-tags:
-  - agentscope-java
-  - tracing
-  - opentelemetry
-  - langfuse
-  - studio
-formatter:
-  learning_topic: agentscope-java tracing 模块
-  knowledge_tree_position: agentscope-java/04-集成分析/Tracing 与 OpenTelemetry
-  card_type: 新建卡片
-  tags:
-    - agentscope-java
-    - tracing
-    - opentelemetry
-    - langfuse
-    - studio
-refs: []
----
 
 # Tracing 与 OpenTelemetry
 

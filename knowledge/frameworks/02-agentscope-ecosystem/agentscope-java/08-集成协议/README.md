@@ -1,13 +1,3 @@
----
-id: agentscope-protocols
-type: overview
-title: AgentScope 集成协议
-status: active
-tags:
-  - agentscope-java
-  - protocol
-  - integration
----
 
 # AgentScope 集成协议
 

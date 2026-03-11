@@ -1,18 +1,3 @@
----
-id: agentscope-pipeline
-type: concept
-title: Pipeline 流水线
-status: active
-aliases:
-  - AgentPipeline
-  - SequentialPipeline
-tags:
-  - agentscope-java
-  - pipeline
-  - agent-composition
-refs:
-  - agentscope-core/pipeline/
----
 
 # Pipeline 流水线
 

@@ -1,15 +1,3 @@
----
-id: java-static-keyword
-type: concept
-title: static 关键字
-status: active
-aliases: []
-tags:
-  - java
-  - static
-  - 关键字
-refs: []
----
 
 # static 关键字
 

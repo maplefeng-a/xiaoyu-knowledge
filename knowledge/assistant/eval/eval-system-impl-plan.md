@@ -1,17 +1,3 @@
----
-id: eval-system-impl-plan
-type: plan
-title: Assistant Eval 评估系统实现计划
-status: active
-tags:
-  - assistant
-  - eval
-  - plan
-  - implementation
-created_at: "2026-02-27"
-refs:
-  - ./eval-system-design.md
----
 
 # Assistant Eval 评估系统实现计划
 

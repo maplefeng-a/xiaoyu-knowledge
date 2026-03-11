@@ -1,15 +1,3 @@
----
-id: agent-frameworks-comparison
-type: concept
-title: 智能体框架横向对比
-status: active
-aliases: []
-tags:
-  - comparison
-  - frameworks
-  - analysis
-refs: []
----
 
 # 智能体框架横向对比
 

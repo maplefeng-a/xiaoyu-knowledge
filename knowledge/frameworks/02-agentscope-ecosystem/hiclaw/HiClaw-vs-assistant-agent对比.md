@@ -1,18 +1,3 @@
----
-id: hiclaw-vs-assistant-agent-comparison
-type: comparison
-title: HiClaw vs assistant-agent 架构对比
-status: active
-tags:
-  - architecture
-  - comparison
-  - hiclaw
-  - assistant-agent
-  - agent-design
-refs:
-  - CoPaw: agentscope-ai/CoPaw
-  - xiaoyu/assistant-agent
----
 
 # HiClaw vs assistant-agent 架构对比
 

@@ -1,18 +1,3 @@
----
-id: eval-system-optimization
-type: analysis
-title: Assistant Eval 系统综合分析与优化建议
-status: active
-tags:
-  - assistant
-  - eval
-  - optimization
-  - analysis
-refs:
-  - ./benchmark/gaia-benchmark.md
-  - ./benchmark/agent-benchmark-survey.md
-  - ./langchain-eval-comparison.md
----
 
 # Assistant Eval 系统综合分析与优化建议
 

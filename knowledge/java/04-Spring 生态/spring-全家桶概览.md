@@ -1,15 +1,3 @@
----
-id: java-spring-family-overview
-type: concept
-title: Spring 全家桶概览
-status: active
-aliases: []
-tags:
-  - spring
-  - java
-  - 生态
-refs: []
----
 
 # Spring 全家桶概览
 

@@ -1,13 +1,3 @@
----
-id: task-planning-architecture
-type: concept
-title: Task Planning 架构
-status: active
-tags:
-  - assistant
-  - task
-  - architecture
----
 
 # Task Planning Architecture (Assistant)
 

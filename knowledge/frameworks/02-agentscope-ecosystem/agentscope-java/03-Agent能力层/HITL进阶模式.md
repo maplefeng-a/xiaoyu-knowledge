@@ -1,19 +1,3 @@
----
-id: hitl-advanced-modes
-type: concept
-title: HITL 进阶模式
-status: active
-aliases:
-  - 选择式 HITL
-  - 智能确认
-  - 多选项交互
-tags:
-  - agentscope-java
-  - hitl
-  - 人机协作
-refs:
-  - agentscope-java/03-Agent能力层/HITL人机协作
----
 
 # HITL 进阶模式
 
