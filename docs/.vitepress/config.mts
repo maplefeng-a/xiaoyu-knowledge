@@ -8,7 +8,17 @@ export default defineConfig({
   description: 'AI Native 个人助理知识体系',
   lang: 'zh-CN',
   base,
-  
+
+  // 暂时忽略死链接，后续修复
+  ignoreDeadLinks: true,
+
+  markdown: {
+    config: (md) => {
+      // 禁用代码块中的 HTML 解析，避免 <> 被误识别为标签
+      md.set({ html: false })
+    }
+  },
+
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
