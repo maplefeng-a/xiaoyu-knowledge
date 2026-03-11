@@ -1,9 +1,13 @@
 import { defineConfig } from 'vitepress'
 
+// GitHub Pages 部署时使用仓库名作为 base
+const base = process.env.GITHUB_ACTIONS ? '/xiaoyu-knowledge/' : '/'
+
 export default defineConfig({
   title: 'xiaoyu 知识库',
   description: 'AI Native 个人助理知识体系',
   lang: 'zh-CN',
+  base,
   
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
