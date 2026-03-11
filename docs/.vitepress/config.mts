@@ -81,6 +81,18 @@ export default defineConfig({
             { text: '原文展开讲解', link: '/knowledge/harness/原文展开讲解' },
             { text: '深度解析', link: '/knowledge/harness/深度解析-Agent-Harness架构设计' }
           ]
+        },
+        {
+          text: '六大组件',
+          collapsed: false,
+          items: [
+            { text: '01-文件系统', link: '/knowledge/harness/01-文件系统组件详解' },
+            { text: '02-代码执行', link: '/knowledge/harness/02-代码执行组件详解' },
+            { text: '03-沙箱和工具', link: '/knowledge/harness/03-沙箱和工具组件详解' },
+            { text: '04-记忆和搜索', link: '/knowledge/harness/04-记忆和搜索组件详解' },
+            { text: '05-上下文管理', link: '/knowledge/harness/05-上下文管理组件详解' },
+            { text: '06-长周期执行', link: '/knowledge/harness/06-长周期执行组件详解' }
+          ]
         }
       ]
     },
