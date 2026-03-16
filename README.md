@@ -1,40 +1,104 @@
 # xiaoyu-knowledge
 
-xiaoyu 项目的知识库，由 **Clawdbot** 维护。
+xiaoyu project knowledge base, maintained by **Clawdbot**.
 
-## 说明
+## Structure: Learning Cycle
 
-本仓库用于存储通过 `knowledge-learning` skill 产出的知识卡片，与代码仓库分离，便于独立管理和频繁更新。
-
-## 维护者
-
-- **Clawdbot** - 端侧智能体（主要维护）
-- 其他智能体可 clone 同步
-
-## 目录结构
+This knowledge base follows a **learning cycle** pattern:
 
 ```
-knowledge/
-├── assistant/         # xiaoyu 项目相关知识
-│   ├── agent/         # assistant-agent 相关
-│   ├── mcp/           # assistant-mcp 相关
-│   └── ...
-├── java/              # Java 技术栈
-├── spring/            # Spring 技术栈
-├── webflux/           # WebFlux 响应式
-└── ...                # 其他主题
+01-concept-insight/    → Learn new concepts
+02-research-practicing/ → Deep dive & build (xiaoyu projects)
+03-doing-summary/      → Document outputs
+04-reflection/         → Reflect & improve
 ```
 
-## 知识卡片格式
+---
 
-参见 [knowledge-card-template.md](./knowledge-card-template.md)
+## Directory Structure
 
-## 使用方式
+```
+xiaoyu-knowledge/
+├── 01-concept-insight/         # Learn: New concepts & insights
+│   ├── ai-research/           # AI research (OpenAI, Anthropic, etc.)
+│   ├── frameworks/            # Frameworks (LangChain, AgentScope)
+│   ├── protocols/             # Protocols (MCP, A2A)
+│   └── java-ecosystem/        # Java ecosystem (core, Spring, WebFlux)
+│
+├── 02-research-practicing/     # Practice: Deep dive & build
+│   ├── xiaoyu-projects/       # xiaoyu series projects ⭐
+│   │   ├── assistant-agent/
+│   │   ├── assistant-desktop/
+│   │   ├── assistant-mcp/
+│   │   └── assistant-eval/
+│   └── harness/               # Agent Harness patterns
+│
+├── 03-doing-summary/           # Document: What you did & learned
+│   ├── daily-reports/         # Daily AI tech reports
+│   ├── project-summaries/     # Project summaries
+│   └── learning-notes/        # Learning notes
+│
+├── 04-reflection/              # Reflect: Improve your process
+│   ├── weekly-reviews/        # Weekly reviews
+│   ├── lessons-learned/       # Lessons learned
+│   ├── decision-logs/         # Decision logs
+│   └── review/                # Code reviews
+│
+├── _templates/                 # Templates
+├── _meta/                      # Meta files (memory, plans)
+├── _archive/                   # Archived content
+│
+├── 知识索引.md                  # Knowledge index
+└── CHANGELOG.md                # Change log
+```
 
-1. 通过 Issue 提交学习主题
-2. Clawdbot 执行 `knowledge-learning` skill
-3. 产出知识卡片并提交
-4. Pull 获取最新知识
+---
+
+## Learning Flow
+
+### 1. Concept-Insight (Learn)
+First encounter with new knowledge:
+- AI research papers & blog posts
+- Framework documentation
+- Protocol specifications
+- Language fundamentals
+
+### 2. Research-Practicing (Build)
+Deep dive and hands-on practice:
+- xiaoyu project development
+- Code experiments
+- POC projects
+- Issue analysis
+
+### 3. Doing-Summary (Document)
+Record what you did:
+- Daily reports
+- Project summaries
+- Learning notes
+- How-to guides
+
+### 4. Reflection (Improve)
+Meta-thinking about your process:
+- Weekly reviews
+- Lessons learned
+- Decision logs
+- Process improvements
+
+---
+
+## Maintainers
+
+- **Clawdbot** - Edge AI Agent (primary maintainer)
+- Other agents can clone and sync
+
+---
+
+## Related Repositories
+
+- [xiaoyu](https://github.com/maplefeng-a/xiaoyu) - Main project
+- [xiaoyu-skills](https://github.com/maplefeng-a/xiaoyu-skills) - Skills hub
+
+---
 
 ## License
 
