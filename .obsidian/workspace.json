@@ -1,0 +1,222 @@
+{
+  "main": {
+    "id": "30c3cec702575104",
+    "type": "split",
+    "children": [
+      {
+        "id": "f86846c486f4fa90",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4cb96b2acc45f259",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CHANGELOG.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CHANGELOG"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f19d2b75d9f6de01",
+    "type": "split",
+    "children": [
+      {
+        "id": "cf5c13a219ac6b10",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7ce2981ac441b58f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "c3d05cf56d77f8fd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "c9a7d81e1e66fe17",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8ff7b990e627b693",
+    "type": "split",
+    "children": [
+      {
+        "id": "92955f5646177b00",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a97e08e82d052df",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "4306a4b25d726375",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "9f91c55d47a99980",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "cb901dedc14be526",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "e2c12d15925ae4cd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "4cb96b2acc45f259",
+  "lastOpenFiles": [
+    "知识索引.md",
+    "README.md",
+    "_templates/knowledge-card.md",
+    "engineering/java/2026-w06-java-conclusions.md",
+    "engineering/java/2026-w06-java-learning.md",
+    "ai/agent/tracing-basics.md",
+    "ai/agent/context-engineering-basics.md",
+    "daily-briefing/2026-03-16.md",
+    "daily-briefing/2026-03-14.md",
+    "daily-briefing/2026-03-05.md",
+    "daily-briefing/2026-03-04.md",
+    "projects/xiaoyu/web/design.md",
+    "projects/xiaoyu/web",
+    "projects/xiaoyu/skill/skill-repository-backend-design.md",
+    "projects/xiaoyu/skill/skill-package-version-ui-discussion.md",
+    "projects/xiaoyu/skill",
+    "projects/xiaoyu/mcp/message/message-mcp-http-contracts.md",
+    "projects/xiaoyu/mcp/message/implementation-worksplit.md",
+    "projects/xiaoyu/mcp/message/file-based-collaboration-message-scheme.md",
+    "projects/xiaoyu/mcp/task/task-planning-architecture.md",
+    "projects/xiaoyu/mcp/task/case-04-weekly-review.md",
+    "projects/xiaoyu/mcp/task/case-03-daily-close.md",
+    "projects/xiaoyu/mcp/task/case-02-user-initiated-plan-update.md",
+    "projects/xiaoyu/mcp/task/case-01-interface-contract-and-feature-breakdown.md",
+    "projects/xiaoyu/mcp/task/case-01-daily-kickoff.md",
+    "projects/xiaoyu/mcp/knowledge/knowledge-http-api.md",
+    "projects/xiaoyu/mcp/task",
+    "projects/xiaoyu/mcp/message",
+    "projects/xiaoyu/mcp/knowledge",
+    "projects/xiaoyu/mcp",
+    "projects/xiaoyu/index.md",
+    "projects/xiaoyu/eval/benchmark/agent-benchmark-survey.md",
+    "projects/xiaoyu/eval/benchmark",
+    "projects/xiaoyu/eval",
+    "projects/xiaoyu/desktop",
+    "projects/xiaoyu/agent"
+  ]
+}

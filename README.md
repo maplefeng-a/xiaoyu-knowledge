@@ -1,105 +1,40 @@
 # xiaoyu-knowledge
 
-xiaoyu project knowledge base, maintained by **Clawdbot**.
+个人知识库，按领域主题组织。
 
-## Structure: Learning Cycle
-
-This knowledge base follows a **learning cycle** pattern:
-
-```
-01-concept-insight/    → Learn new concepts
-02-research-practicing/ → Deep dive & build (xiaoyu projects)
-03-doing-summary/      → Document outputs
-04-reflection/         → Reflect & improve
-```
-
----
-
-## Directory Structure
+## 目录结构
 
 ```
 xiaoyu-knowledge/
-├── 01-concept-insight/         # Learn: New concepts & insights
-│   ├── ai-research/           # AI research (OpenAI, Anthropic, etc.)
-│   ├── frameworks/            # Frameworks (LangChain, AgentScope)
-│   ├── protocols/             # Protocols (MCP, A2A)
-│   └── java-ecosystem/        # Java ecosystem (core, Spring, WebFlux)
+├── ai/                            # AI 领域
+│   ├── infra/                     # 基础设施（算力、存储、调度、MLOps）
+│   ├── model/                     # 模型（训练、微调、推理、评估）
+│   └── agent/                     # 智能体
+│       ├── frameworks/            # 框架研究 (AgentScope, LangChain, OpenClaw...)
+│       ├── protocol/              # 协议 (A2A, MCP, AGUI)
+│       └── harness/               # Agent Harness 架构模式
 │
-├── 02-research-practicing/     # Practice: Deep dive & build
-│   ├── xiaoyu-projects/       # xiaoyu series projects ⭐
-│   │   ├── assistant-agent/
-│   │   ├── assistant-desktop/
-│   │   ├── assistant-mcp/
-│   │   └── assistant-eval/
-│   └── harness/               # Agent Harness patterns
+├── engineering/                   # 工程技术
+│   └── java/                      # Java 生态 (核心基础, Spring, WebFlux)
 │
-├── 03-doing-summary/           # Document: What you did & learned
-│   ├── daily-reports/         # Daily AI tech reports
-│   ├── project-summaries/     # Project summaries
-│   └── learning-notes/        # Learning notes
+├── projects/                      # 项目研发
+│   └── xiaoyu/                    # xiaoyu 项目 (agent, mcp, eval, skill, desktop, web)
 │
-├── 04-reflection/              # Reflect: Improve your process
-│   ├── weekly-reviews/        # Weekly reviews
-│   ├── lessons-learned/       # Lessons learned
-│   ├── decision-logs/         # Decision logs
-│   └── review/                # Code reviews
+├── daily-briefing/                # 每日早报
 │
-├── _templates/                 # Templates
-├── _meta/                      # Meta files (memory, plans)
-├── _archive/                   # Archived content
-│
-├── 知识索引.md                  # Knowledge index
-└── CHANGELOG.md                # Change log
+├── _meta/                         # 元数据（计划、记忆）
+├── _templates/                    # 模板
+└── 知识索引.md                     # 全局知识索引
 ```
 
----
+## 知识来源
 
-## Learning Flow
+1. **工作研发** — 设计方案、过程材料、总结报告 → 按所属领域归入知识卡片
+2. **专题研究** — 深入某方向的研究报告 → 归入对应主题目录
+3. **信息源摘要** — 博客、技术文章（固定信息源）→ 归入对应主题目录
+4. **每日早报** — 日常信息汇总 → `daily-briefing/`
 
-### 1. Concept-Insight (Learn)
-First encounter with new knowledge:
-- AI research papers & blog posts
-- Framework documentation
-- Protocol specifications
-- Language fundamentals
+## 关联仓库
 
-### 2. Research-Practicing (Build)
-Deep dive and hands-on practice:
-- xiaoyu project development
-- Code experiments
-- POC projects
-- Issue analysis
-
-### 3. Doing-Summary (Document)
-Record what you did:
-- Daily reports
-- Project summaries
-- Learning notes
-- How-to guides
-
-### 4. Reflection (Improve)
-Meta-thinking about your process:
-- Weekly reviews
-- Lessons learned
-- Decision logs
-- Process improvements
-
----
-
-## Maintainers
-
-- **Clawdbot** - Edge AI Agent (primary maintainer)
-- Other agents can clone and sync
-
----
-
-## Related Repositories
-
-- [xiaoyu](https://github.com/maplefeng-a/xiaoyu) - Main project
-- [xiaoyu-skills](https://github.com/maplefeng-a/xiaoyu-skills) - Skills hub
-
----
-
-## License
-
-Private repository
+- [xiaoyu](https://github.com/maplefeng-a/xiaoyu) — 主项目
+- [xiaoyu-skills](https://github.com/maplefeng-a/xiaoyu-skills) — 技能仓库
