@@ -38,3 +38,11 @@ xiaoyu-knowledge/
 
 - [xiaoyu](https://github.com/maplefeng-a/xiaoyu) — 主项目
 - [xiaoyu-skills](https://github.com/maplefeng-a/xiaoyu-skills) — 技能仓库
+- [xiaoyu-workspace](https://github.com/maplefeng-a/xiaoyu-workspace) — 源文档（documents/）
+
+## 智能体维护
+
+- **维护者**: xiaoyu-knowledge (Agent ID: kYWnuT)
+- **任务接收**: GitHub Issue
+- **维护规范**: [AGENTS.md](./AGENTS.md)
+- **维护日志**: [log.md](./log.md)
